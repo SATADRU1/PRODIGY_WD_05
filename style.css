@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00B4DB, #0083B0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #f0f0f0;
+    font-size: 16px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.search-input:focus {
+    background: #e6e6e6;
+}
+
+.search-button,
+.location-button {
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 10px;
+    background: #0083B0;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover,
+.location-button:hover {
+    background: #006687;
+}
+
+.weather-box {
+    text-align: center;
+}
+
+.weather-details {
+    margin-bottom: 30px;
+}
+
+.weather-icon {
+    width: 120px;
+    margin: 20px 0;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.location {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 2px solid #f0f0f0;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.humidity i,
+.wind i {
+    font-size: 26px;
+    color: #0083B0;
+}
+
+.humidity div,
+.wind div {
+    text-align: left;
+}
+
+.humidity-value,
+.wind-speed {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.humidity p,
+.wind p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 3px;
+} 
